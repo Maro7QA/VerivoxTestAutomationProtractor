@@ -46,7 +46,7 @@ http://www.chaijs.com/api/
 
 4) Use https://www.npmjs.com/package/elementor to make your life easy
 
-5) All E2E tests are executed on the website : computer-database.herokuapp com/computers
+5) All E2E tests are executed on the website : computer-database.herokuapp com/computers.
 
 
 
