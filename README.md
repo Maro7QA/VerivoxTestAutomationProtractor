@@ -12,7 +12,9 @@ Steps:
 C:\Users\YOUR-NAME\AppData\Roaming\npm\node_modules\protractor\protractor-cucumber-framework
 
 2. Install all necessary packages using npm:
+
 Run command to get all necessary packages: 
+
 npm install
 
 3. Write your tests in features/ folder
@@ -21,9 +23,12 @@ npm install
 
 5. This framework uses Page Object pattern, so move your locators to separate pages in pages/ folder
 
-6. Run your tests by following command: 
+6. Run your tests by following command:
+ 
 webdriver-manager update
+
 webdriver-manager start
+
 npm test
 
 
