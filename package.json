@@ -1,15 +1,14 @@
 {
   "name": "protractor-cucumber",
   "version": "1.0.0",
-  "description": "Framework based on Cucumber, Protractor, Allure and uses PageObject pattern",
+  "description": "Framework to make E2E UI tests. It is based on Cucumber, Protractor, Allure and uses PageObject pattern",
   "main": "index.js",
   "scripts": {
     "test": "protractor config/config.js",
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update"
   },
-  "author": "Vitalii Popovych",
-  "license": "ISC",
+  "author": "Padmaraj Nidagundi",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
