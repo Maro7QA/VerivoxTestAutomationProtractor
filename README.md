@@ -1,7 +1,9 @@
 # protractor-cucumber-framework
 
 Preconditions:
-- Protractor is a Node.js program. To run, you will need to have Node.js installed from ( https://www.protractortest.org ). Check the version of Node.js you have by running node --version
+- Protractor is a Node.js program. To run, you will need to have Node.js installed from https://nodejs.org/en/ Check the version of Node.js you have by running node --version
+
+- Install the Protractor using the node! installation guide found on ( https://www.protractortest.org )
 
 - Also You will need to have the Java Development Kit (JDK) installed to run the standalone Selenium Server. Check this by running java -version from the command line
 
