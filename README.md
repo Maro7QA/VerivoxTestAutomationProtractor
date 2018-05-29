@@ -30,3 +30,26 @@ webdriver-manager start
 npm test
 
 
+Optimization tips :
+1) To run on multiple browser make change in the line number 9 - config\config.js file
+  multiCapabilities: [{
+  browserName: 'firefox'
+  }, {
+  browserName: 'chrome'  }]
+  
+2) Protractor API Docs found on the https://www.protractortest.org/#/api
+
+3) Basic tutorial found on the 
+https://www.protractortest.org/#/tutorial
+https://docs.cucumber.io/
+http://www.chaijs.com/api/
+
+4) Use https://www.npmjs.com/package/elementor to make your life easy
+
+5) All E2E tests are executed on the website : computer-database.herokuapp com/computers
+
+
+
+
+
+
