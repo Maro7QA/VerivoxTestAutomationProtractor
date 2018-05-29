@@ -11,9 +11,7 @@ Steps:
 1. Clone this repository in Your Projects folder (or any other directory): 
 C:\Users\YOUR-NAME\AppData\Roaming\npm\node_modules\protractor\protractor-cucumber-framework
 
-2. Install all necessary packages using npm:
-
-Run command to get all necessary packages: 
+2. Install all necessary packages using npm: Run command to get all necessary packages: 
 
 npm install
 
