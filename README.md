@@ -49,8 +49,8 @@ http://www.chaijs.com/api/
 5) All E2E tests are executed on the website : computer-database.herokuapp com/computers.
 
 
-More to learn
-- # protractor cheat sheet
+More to learn 
+- # Protractor cheat sheet | Protractor short cuts |  Protractor help
 
 1) To Control The We Browser :
 
