@@ -111,15 +111,15 @@ More to learn
 
 7) Web element position handling :
 
-- element(by.id('item1')).getLocation().then(function(location) {
--   var x = location.x;
--   var y = location.y;
-- });
+ element(by.id('item1')).getLocation().then(function(location) {
+  var x = location.x;
+  var y = location.y;
+ });
 
-- element(by.id('item1')).getSize().then(function(size) {
--   var width = size.width;
--   var height = size.height;
-- });
+ element(by.id('item1')).getSize().then(function(size) {
+  var width = size.width;
+   var height = size.height;
+ });
 
 8) For the Jasmine Matchers :
 
