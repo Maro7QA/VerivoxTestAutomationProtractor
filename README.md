@@ -52,7 +52,7 @@ http://www.chaijs.com/api/
 More to learn
 - # protractor cheat sheet
 
-- To Control The We Browser :
+1) To Control The We Browser :
 
 - browser.get('yoururl'); // Load address, can also use '#yourpage'
 - browser.navigate().back();
@@ -62,19 +62,19 @@ More to learn
 - browser.getLocationAbsUrl() // get the current address
 - browser.ignoreSynchronization = true; // If true, Protractor will not attempt to synchronize with the page before performing actions
 
-- Wait for some web element to become present/visible  :
+2) Wait for some web element to become present/visible  :
 
 - browser.wait(function() {
 -    return element(by.id('create')).isPresent();
 - }, 5000);
 - element(by.id('create')).click();
 
-- To Check The Visibility
+3) To Check The Visibility
 - element(by.id('create')).isPresent() // Be careful with this: element is often present while it's not displayed...
 - element(by.id('create')).isEnabled() //Enabled/disabled, as in ng-disabled...
 - element(by.id('create')).isDisplayed() //Is element currently visible/displayed?
 
-- Finding ways for the HTML web elements  :
+4) Finding ways for the HTML web elements  :
 
 - element(by.id('user_name'))
 - element(by.css('#myItem'))
@@ -91,7 +91,7 @@ More to learn
 - var dog = element(by.cssContainingText('.pet', 'Dog'));
 - var allOptions = element.all(by.options('c c in colors')); //When ng-options is used with selectbox
 
-- Finding the collection of HTML web elements :
+5) Finding the collection of HTML web elements :
 
 - var list = element.all(by.css('.items));
 - var list2 = element.all(by.repeater('personhome.results'));
@@ -102,14 +102,14 @@ More to learn
 - expect(list.first().getText()).toBe('First’)
 - expect(list.last().getText()).toBe('Last’)
 
-- Wasy to Send keystrokes :
+6) Wasy to Send keystrokes :
 
 - element(by.id('user_name').sendKeys("user1");
 - sendKeys(protractor.Key.ENTER);
 - sendKeys(protractor.Key.TAB);
 - element(by.id('user_name')).clear()
 
-- Web element position handling :
+7) Web element position handling :
 
 - element(by.id('item1')).getLocation().then(function(location) {
 -   var x = location.x;
@@ -121,7 +121,7 @@ More to learn
 -   var height = size.height;
 - });
 
-- For the Jasmine Matchers :
+8) For the Jasmine Matchers :
 
 - to(N­ot)­Be( null | true | false )
 - to(N­ot)­Equ­al( value )
