@@ -49,6 +49,94 @@ http://www.chaijs.com/api/
 5) All E2E tests are executed on the website : computer-database.herokuapp com/computers.
 
 
+More to learn
+# protractor cheat sheet
+
+To Control The We Browser :
+
+browser.get('yoururl'); // Load address, can also use '#yourpage'
+browser.navigate().back();
+browser.navigate().forward();
+browser.sleep(10000); // if your test is outrunning the browser
+browser.waitForAngular(); // if your test is outrunning the browser
+browser.getLocationAbsUrl() // get the current address
+browser.ignoreSynchronization = true; // If true, Protractor will not attempt to synchronize with the page before performing actions
+
+Wait for some web element to become present/visible  :
+
+browser.wait(function() {
+   return element(by.id('create')).isPresent();
+}, 5000);
+element(by.id('create')).click();
+
+To Check The Visibility
+element(by.id('create')).isPresent() // Be careful with this: element is often present while it's not displayed...
+element(by.id('create')).isEnabled() //Enabled/disabled, as in ng-disabled...
+element(by.id('create')).isDisplayed() //Is element currently visible/displayed?
+
+Finding ways for the HTML web elements  :
+
+element(by.id('user_name'))
+element(by.css('#myItem'))
+element(by.model('person.name')) // refers to ng-model directive
+element(by.binding('person.concatName')); // refers to ng-bind directive
+element(by.textarea('person.extraDetails'));
+element (by.input( 'username' ));
+element (by.input( 'username' )).clear();
+element(by.buttonText('Save'));
+element(by.partialButtonText('Save'));
+element(by.linkText('Save'));
+element(by.partialLinkText('Save'));
+element(by.css('[ng-click="cancel()"]')); 
+var dog = element(by.cssContainingText('.pet', 'Dog'));
+var allOptions = element.all(by.options('c c in colors')); //When ng-options is used with selectbox
+
+Finding the collection of HTML web elements :
+
+var list = element.all(by.css('.items));
+var list2 = element.all(by.repeater('personhome.results'));
+var list3 = element.all(by.xpath('//div
+expect(list.count()).toBe(3);
+expect(list.get(0).getText()).toBe('First’)
+expect(list.get(1).getText()).toBe('Second’)
+expect(list.first().getText()).toBe('First’)
+expect(list.last().getText()).toBe('Last’)
+
+Wasy to Send keystrokes :
+
+element(by.id('user_name').sendKeys("user1");
+sendKeys(protractor.Key.ENTER);
+sendKeys(protractor.Key.TAB);
+element(by.id('user_name')).clear()
+
+Web element position handling :
+
+element(by.id('item1')).getLocation().then(function(location) {
+  var x = location.x;
+  var y = location.y;
+});
+
+element(by.id('item1')).getSize().then(function(size) {
+  var width = size.width;
+  var height = size.height;
+});
+
+For the Jasmine Matchers :
+
+to(N­ot)­Be( null | true | false )
+to(N­ot)­Equ­al( value )
+to(N­ot)­Mat­ch( regex | string )
+toBe­Def­ine­d()
+toBe­Und­efi­ned()
+toBe­Nul­l()
+toBe­Tru­thy()
+toBe­Fal­sy()
+to(N­ot)­Con­tain( string )
+toBe­Les­sTh­an( number )
+toBe­Gre­ate­rTh­an( number )
+toBe­NaN()
+toBe­Clo­seTo( number, precision )
+toTh­row()
 
 
 
