@@ -64,10 +64,10 @@ More to learn
 
 2) Wait for some web element to become present/visible  :
 
-- browser.wait(function() {
--    return element(by.id('create')).isPresent();
-- }, 5000);
-- element(by.id('create')).click();
+ browser.wait(function() {
+   return element(by.id('create')).isPresent();
+ }, 5000);
+ element(by.id('create')).click();
 
 3) To Check The Visibility
 - element(by.id('create')).isPresent() // Be careful with this: element is often present while it's not displayed...
