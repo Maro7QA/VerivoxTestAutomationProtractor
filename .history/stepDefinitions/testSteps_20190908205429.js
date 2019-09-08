@@ -13,8 +13,10 @@ module.exports = function() {
 this.Given(/^the site "([^"]*)" is opened$/, function (site, callback) {
     browser.waitForAngularEnabled(false);
     browser.get(site)
-   // browser.driver.manage().window().maximize()
-      .then(callback);
+    browser.await t // set the window size to it's max size
+        .maximizeWindow();
+        
+    browser.then(callback);
 });
 
 this.When(/^I add "([^"]*)" in the search field$/, function (task, callback) {

@@ -13,6 +13,7 @@ module.exports = function() {
 this.Given(/^the site "([^"]*)" is opened$/, function (site, callback) {
     browser.waitForAngularEnabled(false);
     browser.get(site)
+    browser.driver.sleep(4000)
    // browser.driver.manage().window().maximize()
       .then(callback);
 });

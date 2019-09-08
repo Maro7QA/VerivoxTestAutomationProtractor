@@ -5,7 +5,7 @@ Feature: Adding Computer to table
 
   Scenario: Open verivox
     Given the site "https://www.verivox.de/" is opened
-    When I select cellphone section
+   # And I click Add a new computer button
     #Then url should be "http://computer-database.herokuapp.com/computers/new"
     #When I fill in Computer name field with "Super Puper"
     #And I fill in Introduced date field with "2018-01-18"
